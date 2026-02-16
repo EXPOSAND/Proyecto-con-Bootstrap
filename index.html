@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Proyecto Bootstrap Andrea Expósito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional ACEL</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> <!-- Iconos de habilidades -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Sprint 1: Dominio y Hosting configurados con GitHub Pages</h1>
-    <p>En construcción....</p>
+
+    <header class="navbar">
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#hero">Inicio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="seccion-hero">
+    <div class="div_hero">
+        <div class="hero-image-column">
+            <img src="image.png" alt="Imagen Personalizada" class="hero_avatar">
+        </div>
+
+        <div class="hero-text-column">
+            <h1>Hola, <span class="highlight">soy Andrea Expósito</span></h1>
+            <p>Desarrolladora web apasionada por el mundo de la tecnologia y la innovacion.</p>
+            <a href="#habilidades" class="boton_habilidades">Ver mis habilidades</a>
+        </div>
+    </div>
+</section>
+
+    <section id="habilidades" class="seccion_skills">
+    <h2>Mis <span class="highlight">Habilidades</span></h2>
+    <div class="div_skills">
+        <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <h4>HTML5 & CSS3</h4>
+        </div>
+        <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <h4>JavaScript</h4>
+        </div>
+        <div class="skill-card">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <h4>Bootstrap</h4>
+        </div>
+        <div class="skill-card">
+            <i class="devicon-vuejs-plain colored"></i>
+            <h4>Vue.js</h4>
+        </div>
+        <div class="skill-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <h4>MySQL</h4>
+        </div>
+        <div class="skill-card">
+            <i class="devicon-php-plain colored"></i>
+            <h4>PHP</h4>
+        </div>
+        <div class="skill-card">
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+            <h4>AWS</h4>
+        </div>
+    </div>
+</section>
+
+    <footer id="footer">
+        <p>&copy; 2026 Creado por Andrea Expósito</p>
+        <div class="rrss">
+            <p>Email: andrearmd55@gmail.com</p>
+            <p>Tel: +(34) 604370959</p>
+        </div>
+    </footer>
 </body>
 </html>

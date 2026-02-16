@@ -1,0 +1,147 @@
+/* Variables de color: Paleta Azul Profesional */
+:root {
+    --azul-oscuro: #0a192f;
+    --azul-medio: #112240;
+    --azul-primario: #007bff;
+    --azul-claro: #00d2ff;
+    --texto-blanco: #e6f1ff;
+    --texto-gris: #8892b0;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    line-height: 1.6; 
+    color: var(--texto-blanco);
+    background-color: var(--azul-oscuro);
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(10, 25, 47, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo { 
+    font-weight: bold; font-size: 1.5rem; color: var(--azul-claro); 
+}
+
+.navbar nav a { 
+    margin-left: 25px; 
+    text-decoration: none; 
+    color: var(--texto-blanco); 
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover { 
+    color: var(--azul-claro); 
+}
+
+/* Hero Section */
+/* Contenedor principal del Hero */
+.div_hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 50px; /* Espacio entre imagen y texto */
+}
+
+.seccion-hero {
+    height: 100vh;
+    padding: 0 8%;
+    background: radial-gradient(circle at center, var(--azul-medio) 0%, var(--azul-oscuro) 100%);
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la imagen */
+.hero_avatar {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+}
+
+.hero-text-column {
+    text-align: left; 
+    flex: 1;
+}
+
+.hero-text-column h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text-column p {
+    font-size: 1.2rem; 
+    color: var(--texto-gris); /* Color de texto secundario para el párrafo */
+    max-width: 500px;
+}
+.highlight { 
+    color: var(--azul-claro); 
+} /* Resalta el nombre con un color diferente */
+
+.boton_habilidades {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 35px;
+    background: transparent; /* Fondo transparente para un estilo más moderno */
+    color: var(--azul-claro);
+    text-decoration: none;
+    border: 2px solid var(--azul-claro);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton_habilidades:hover {
+    background: rgba(0, 210, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.2);
+}
+
+/* Habilidades */
+.seccion_skills { 
+    padding: 100px 10%; 
+    text-align: center; 
+    background-color: var(--azul-oscuro); /* Fondo sólido para separar visualmente del Hero */
+}
+
+.div_skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Tarjetas responsivas */
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.skill-card i {
+    font-size: 3rem; /* Tamaño del logo */
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: #020c1b;
+    color: var(--texto-gris);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.rrss { 
+    margin-top: 15px; font-size: 0.9rem; 
+}
