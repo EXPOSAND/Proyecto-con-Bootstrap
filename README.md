@@ -1,18 +1,39 @@
-👤 Mi Portafolio Personal | 2DAW
-Este repositorio contiene el código de mi página web personal. Es un proyecto diseñado para presentar mi perfil como Desarrolladora Web en formación, mostrar mis habilidades técnicas y centralizar los proyectos realizados durante el ciclo de 2DAW.
+📝 Mi Portfolio Personal - Andrea Expósito López
+¡Bienvenido/a a mi portfolio! Este es un proyecto de código abierto diseñado para mostrar mi trayectoria como Desarrolladora Web Full Stack, mis habilidades técnicas y los proyectos que he realizado.
 
-🛠️ Tecnologías y Herramientas
-Para el desarrollo de este sitio, me enfoqué en darle un estilo que se asemejara a mi personalidad y a aprender nuevos trucos que resultaran mas llamativos.
+🚀 Vista Previa
+La página cuenta con una interfaz moderna en tonalidades azules, diseño responsivo y una ilustración personalizada.
 
-Frontend: HTML5 y CSS3.
+Hero Section: Presentación con ilustración animada.
 
-Framework CSS: Bootstrap 5 (Uso de Grid System, Flexbox y componentes).
+Sobre Mí: Información personal y experiencia.
 
-Interactividad: JavaScript para animaciones y validación de formularios.
+Habilidades: Grid interactivo con logos oficiales (DevIcon).
 
-Iconografía: FontAwesome o Bootstrap Icons.
+Proyectos: Tarjetas con enlaces directos a repositorios de GitHub.
 
-Despliegue:  GitHub Pages
+Contacto: Formulario funcional y redes sociales.
 
-👩‍🎓 Objetivo del Proyecto
-Este sitio no es solo una carta de presentación, sino un ejercicio práctico para dominar el maquetado ágil con Bootstrap y la gestión de layouts complejos. Como estudiante de 2DAW, este proyecto evoluciona conmigo a medida que aprendo nuevas tecnologías.
+🛠️ Tecnologías Utilizadas
+Para el desarrollo de esta web he utilizado el "Power Trio" del frontend, sumado a librerías de iconos:
+
+HTML5: Estructura semántica.
+
+CSS3: Diseño personalizado, Flexbox, CSS Grid y animaciones.
+
+JavaScript (JS): Interactividad, efectos de scroll y manejo del DOM.
+
+DevIcon: Para los logos de tecnologías (Vue, PHP, AWS, etc.).
+
+Font Awesome: Para iconos de redes sociales.
+
+📧 Contacto
+¿Tienes alguna pregunta o propuesta? ¡Hablemos!
+
+Email: andrearmd55@gmail.com
+
+LinkedIn: www.linkedin.com/in/andrea-exposito-384770289
+
+GitHub: @EXPOSAND
+
+Creado con ❤️ por Andrea - 2026.

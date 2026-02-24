@@ -1,72 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Profesional ACEL</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> <!-- Iconos de habilidades -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Iconos de habilidades -->
 </head>
+
 <body>
 
     <header class="navbar">
         <div class="logo">LOGO</div>
         <nav>
             <a href="#hero">Inicio</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#curriculum">CV</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Portfolio</a>
+            <a href="#noticias">Blog</a>
             <a href="#footer">Contacto</a>
         </nav>
     </header>
 
     <section id="hero" class="seccion-hero">
-    <div class="div_hero">
-        <div class="hero-image-column">
-            <img src="image.png" alt="Imagen Personalizada" class="hero_avatar">
-        </div>
+        <div class="div_hero">
+            <div class="hero-image-column">
+                <img src="/img/image.png" alt="Imagen Personalizada" class="hero_avatar">
+            </div>
 
-        <div class="hero-text-column">
-            <h1>Hola, <span class="highlight">soy Andrea Expósito</span></h1>
-            <p>Desarrolladora web apasionada por el mundo de la tecnologia y la innovacion.</p>
-            <a href="#habilidades" class="boton_habilidades">Ver mis habilidades</a>
+            <div class="hero-text-column">
+                <h1>Hola, <span class="highlight">soy Andrea Expósito</span></h1>
+                <p>Desarrolladora web especialidada en tecnologías modernas como HTML, CSS, JavaScript y frameworks como
+                    Vue.js.</p>
+                <a href="#habilidades" class="boton_habilidades">Ver mis habilidades</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="sobre-mi" class="section-padding">
+        <div class="container">
+            <h2>¿Quién <span class="highlight">soy yo?</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Soy una desarrolladora apasionada por la tecnología, la innovación, la ciencia y el análisis de
+                        datos con experiencia en desarrollo web moderno.</p>
+                    <ul class="personal-info">
+                        <li><strong>Edad:</strong> 25 años</li>
+                        <li><strong>Residencia:</strong> Madrid, España</li>
+                        <li><strong>Freelance:</strong> Disponible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="section-padding bg-alt">
+        <div class="container">
+            <h2>Mi <span class="highlight">Trayectoria</span></h2>
+            <div class="cv-grid">
+                <div class="cv-col">
+                    <h3>Educación</h3>
+                    <div class="cv-item">
+                        <span class="date">2025 - 2026</span>
+                        <h4>Cursando 2DAW</h4>
+                        <p>IES Domenico Scarlatti</p>
+                    </div>
+                </div>
+                <div class="cv-col">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="cv-item">
+                        <span class="date">2021 - Actualidad</span>
+                        <h4>Mozo Especialista</h4>
+                        <p>Amazon Spain Fullfilment Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <h2>Lo que <span class="highlight">ofrezco</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="devicon-chrome-plain"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios modernos y adaptables con tecnologias de vanguardia.</p>
+                </div>
+                <div class="service-card">
+                    <i class="devicon-amazonwebservices-plain"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Despliegue y gestión en AWS.</p>
+                </div>
+                <div class="service-card">
+                    <i class="devicon-amazonwebservices-plain"></i>
+                    <h3>Gestion de RRSS</h3>
+                    <p>Creación y gestión de perfiles en redes sociales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="habilidades" class="seccion_skills">
-    <h2>Mis <span class="highlight">Habilidades</span></h2>
-    <div class="div_skills">
-        <div class="skill-card">
-            <i class="devicon-html5-plain colored"></i>
-            <h4>HTML5 & CSS3</h4>
+        <h2>Mis <span class="highlight">Habilidades</span></h2>
+        <div class="div_skills">
+            <div class="skill-card">
+                <i class="devicon-html5-plain colored"></i>
+                <h4>HTML5 & CSS3</h4>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-vuejs-plain colored"></i>
+                <h4>Vue.js</h4>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-mysql-plain colored"></i>
+                <h4>MySQL</h4>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-php-plain colored"></i>
+                <h4>PHP</h4>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                <h4>AWS</h4>
+            </div>
         </div>
-        <div class="skill-card">
-            <i class="devicon-javascript-plain colored"></i>
-            <h4>JavaScript</h4>
+    </section>
+    <section id="proyectos" class="section-padding">
+        <div class="container">
+            <h2>Mis <span class="highlight">Proyectos</span></h2>
+            <p>Una selección de mis trabajos más recientes en GitHub.</p>
+
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="/img/Buhos-web.png" alt="Captura de Proyecto">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Pagina Web con tematica de buhos</h3>
+                        <p>Un panel de administración completo desarrollado con PHP y MySQL para gestión de inventarios.
+                        </p>
+                        <div class="proyecto-tags">
+                            <span>HTML</span> <span>CSS</span> <span>JS</span>
+                        </div>
+                        <div class="proyecto-links">
+                            <a href="https://github.com/EXPOSAND/MisBuhos" target="_blank" class="btn-git">
+                                <i class="devicon-github-original"></i> GitHub
+                            </a>
+                            <a href="#" class="btn-demo">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="/img/mqdefault.jpg" alt="Captura de Proyecto">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Battleship programada con Java</h3>
+                        <p>Aplicación interactiva que permite jugar al juego clásico de Battleship.</p>
+                        <div class="proyecto-tags">
+                            <span>Java</span> <span>NetBeans</span>
+                        </div>
+                        <div class="proyecto-links">
+                            <a href="https://github.com/EXPOSAND/Battleship-Java" target="_blank" class="btn-git">
+                                <i class="devicon-github-original"></i> GitHub
+                            </a>
+                            <a href="#" class="btn-demo">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="/img/EPIS.jpg" alt="Captura de Proyecto">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Aplicacion de gestion de EPIS</h3>
+                        <p>Un panel de administración completo desarrollado con PHP y MySQL para gestión de inventarios.
+                        </p>
+                        <div class="proyecto-tags">
+                            <span>HTML</span> <span>CSS</span> <span>JS</span> <span>Bootstrap</span>
+                        </div>
+                        <div class="proyecto-links">
+                            <a href="https://github.com/EXPOSAND/Epi-c" target="_blank" class="btn-git">
+                                <i class="devicon-github-original"></i> GitHub
+                            </a>
+                            <a href="#" class="btn-demo">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skill-card">
-            <i class="devicon-bootstrap-plain colored"></i>
-            <h4>Bootstrap</h4>
+    </section>
+    <section id="noticias" class="section-padding bg-alt">
+        <div class="container">
+            <h2>Últimas <span class="highlight">Noticias</span></h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="/img/MIT-Massachusetts-Institute-of-Technology-Logo.png" alt="Noticia">
+                    <div class="blog-info">
+                        <span>23 Feb, 2026</span>
+                        <h4>El MIT ha destacado 10 tecnologías clave para 2026, incluyendo centros de datos a hiperescala, micro-reactores nucleares y sistemas para obtener agua del aire.</h4>
+                        <a href="https://www.technologyreview.com/magazines/the-innovation-issue-26/">Leer más</a>
+                    </div>
+                </article>
+            </div>
         </div>
-        <div class="skill-card">
-            <i class="devicon-vuejs-plain colored"></i>
-            <h4>Vue.js</h4>
-        </div>
-        <div class="skill-card">
-            <i class="devicon-mysql-plain colored"></i>
-            <h4>MySQL</h4>
-        </div>
-        <div class="skill-card">
-            <i class="devicon-php-plain colored"></i>
-            <h4>PHP</h4>
-        </div>
-        <div class="skill-card">
-            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-            <h4>AWS</h4>
-        </div>
-    </div>
-</section>
+    </section>
 
     <footer id="footer">
         <p>&copy; 2026 Creado por Andrea Expósito</p>
@@ -76,4 +228,5 @@
         </div>
     </footer>
 </body>
+
 </html>
