@@ -21,19 +21,16 @@ HTML5: Estructura semántica.
 
 CSS3: Diseño personalizado, Flexbox, CSS Grid y animaciones.
 
-JavaScript (JS): Interactividad, efectos de scroll y manejo del DOM.
-
-DevIcon: Para los logos de tecnologías (Vue, PHP, AWS, etc.).
-
-Font Awesome: Para iconos de redes sociales.
+Bootstrap: Diseño elegante y facil d emanejar
 
 📧 Contacto
 ¿Tienes alguna pregunta o propuesta? ¡Hablemos!
 
 Email: andrearmd55@gmail.com
 
-LinkedIn: www.linkedin.com/in/andrea-exposito-384770289
+LinkedIn: www.linkedin.com/in/andrea-expósito-lópez-desarrolladora-web
 
 GitHub: @EXPOSAND
 
 Creado con ❤️ por Andrea - 2026.
+
