@@ -1,232 +1,403 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profesional ACEL</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Iconos de habilidades -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Andrea Expósito</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" tabindex="0">
+  <!--  Agregado data-bs-root-margin para activar secciones un poco antes de llegar a ellas -->
 
-    <header class="navbar">
-        <div class="logo">LOGO</div>
-        <nav>
-            <a href="#hero">Inicio</a>
-            <a href="#sobre-mi">Sobre Mí</a>
-            <a href="#curriculum">CV</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#proyectos">Portfolio</a>
-            <a href="#noticias">Blog</a>
-            <a href="#footer">Contacto</a>
-        </nav>
-    </header>
+  <!-- NAV -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top"
+    style="background: rgba(15,19,24,.75); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.08);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">Inicio</a>
 
-    <section id="hero" class="seccion-hero">
-        <div class="div_hero">
-            <div class="hero-image-column">
-                <img src="/img/image.png" alt="Imagen Personalizada" class="hero_avatar">
-            </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="hero-text-column">
-                <h1>Hola, <span class="highlight">soy Andrea Expósito</span></h1>
-                <p>Desarrolladora web especialidada en tecnologías modernas como HTML, CSS, JavaScript y frameworks como
-                    Vue.js.</p>
-                <a href="#habilidades" class="boton_habilidades">Ver mis habilidades</a>
-            </div>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4"> <!-- Agregado g-4 para espacio entre columnas en móviles -->
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-2">Andrea Expósito</h1>
+          <p class="mb-3 text-uppercase" style="letter-spacing:.12em; color: var(--text-soft);">
+            Desarrolladora Web Full Stack
+          </p>
+
+          <p class="lead mb-4"> <!--lead para destacar el texto-->
+            Apasionada por la tecnología y el desarrollo web, me especializo en crear soluciones digitales innovadoras.
+            Con experiencia en Java, JavaScript, HTML, CSS y frameworks como Vue.js, busco constantemente aprender y
+            crecer en el mundo del desarrollo web.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary px-4" href="#sobre"><i class="bi bi-person-badge me-1"></i> Conóceme</a>
+            <a class="btn btn-soft px-4" href="#habilidades"><i class="bi bi-lightning-charge me-1"></i> Habilidades</a>
+          </div>
+
+          <div class="d-flex gap-3 mt-4">
+            <!-- Cambia enlaces -->
+            <a class="text-white-50 fs-4" href="https://github.com/EXPOSAND" aria-label="GitHub"><i
+                class="bi bi-github"></i></a>
+            <a class="text-white-50 fs-4" href="https://www.linkedin.com/in/andrea-expósito-lópez-desarrolladora-web"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="text-white-50 fs-4" href="mailto:andrearmd55@gmail.com" aria-label="Email"><i
+                class="bi bi-envelope"></i></a>
+          </div>
         </div>
-    </section>
 
-    <section id="sobre-mi" class="section-padding">
-        <div class="container">
-            <h2>¿Quién <span class="highlight">soy yo?</span></h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Soy una desarrolladora apasionada por la tecnología, la innovación, la ciencia y el análisis de
-                        datos con experiencia en desarrollo web moderno.</p>
-                    <ul class="personal-info">
-                        <li><strong>Edad:</strong> 25 años</li>
-                        <li><strong>Residencia:</strong> Madrid, España</li>
-                        <li><strong>Freelance:</strong> Disponible</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-lg-6">
+          <div class="hero-card ms-lg-auto" style="max-width: 520px;">
+            <!-- Pon tu foto aquí -->
+            <img class="hero-img" src="imagenes/WhatsApp Image 2026-03-01 at 19.24.22.jpeg" alt="Foto de perfil">
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <section id="curriculum" class="section-padding bg-alt">
-        <div class="container">
-            <h2>Mi <span class="highlight">Trayectoria</span></h2>
-            <div class="cv-grid">
-                <div class="cv-col">
-                    <h3>Educación</h3>
-                    <div class="cv-item">
-                        <span class="date">2025 - 2026</span>
-                        <h4>Cursando 2DAW</h4>
-                        <p>IES Domenico Scarlatti</p>
-                    </div>
-                </div>
-                <div class="cv-col">
-                    <h3>Experiencia Laboral</h3>
-                    <div class="cv-item">
-                        <span class="date">2021 - Actualidad</span>
-                        <h4>Mozo Especialista</h4>
-                        <p>Amazon Spain Fullfilment Center</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- SOBRE MI -->
+  <section id="sobre">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="section-subtitle">Mi situación actual y formación</div>
+      </div>
 
-    <section id="servicios" class="section-padding">
-        <div class="container">
-            <h2>Lo que <span class="highlight">ofrezco</span></h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="devicon-chrome-plain"></i>
-                    <h3>Desarrollo Web</h3>
-                    <p>Creación de sitios modernos y adaptables con tecnologias de vanguardia.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card info-card p-3">
+            <div class="card-body">
+              <div class="d-flex align-items-start justify-content-between gap-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rounded-3 p-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h5 class="mb-0 fw-bold">Trabajo Actual</h5> <!---fw-bold para resaltar el título-->
                 </div>
-                <div class="service-card">
-                    <i class="devicon-amazonwebservices-plain"></i>
-                    <h3>Cloud Computing</h3>
-                    <p>Despliegue y gestión en AWS.</p>
-                </div>
-                <div class="service-card">
-                    <i class="devicon-amazonwebservices-plain"></i>
-                    <h3>Gestion de RRSS</h3>
-                    <p>Creación y gestión de perfiles en redes sociales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <span class="chip">2024 - ACT.</span>
+              </div>
 
-    <section id="habilidades" class="seccion_skills">
-        <h2>Mis <span class="highlight">Habilidades</span></h2>
-        <div class="div_skills">
-            <div class="skill-card">
-                <i class="devicon-html5-plain colored"></i>
-                <h4>HTML5 & CSS3</h4>
+              <p class="mt-3 mb-1 fw-semibold">Mozo de Almacen</p>
+              <p class="text-muted mb-0"> <!---text-muted para texto secundario-->
+                Ejerzo de mozo especialista en Amazon desde 2024, donde he desarrollado habilidades en logística,
+                gestión de inventarios y trabajo en equipo.
+              </p>
             </div>
-            <div class="skill-card">
-                <i class="devicon-javascript-plain colored"></i>
-                <h4>JavaScript</h4>
-            </div>
-            <div class="skill-card">
-                <i class="devicon-bootstrap-plain colored"></i>
-                <h4>Bootstrap</h4>
-            </div>
-            <div class="skill-card">
-                <i class="devicon-vuejs-plain colored"></i>
-                <h4>Vue.js</h4>
-            </div>
-            <div class="skill-card">
-                <i class="devicon-mysql-plain colored"></i>
-                <h4>MySQL</h4>
-            </div>
-            <div class="skill-card">
-                <i class="devicon-php-plain colored"></i>
-                <h4>PHP</h4>
-            </div>
-            <div class="skill-card">
-                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                <h4>AWS</h4>
-            </div>
+          </div>
         </div>
-    </section>
-    <section id="proyectos" class="section-padding">
-        <div class="container">
-            <h2>Mis <span class="highlight">Proyectos</span></h2>
-            <p>Una selección de mis trabajos más recientes en GitHub.</p>
 
-            <div class="proyectos-grid">
-                <div class="proyecto-card">
-                    <div class="proyecto-img">
-                        <img src="/img/Buhos-web.png" alt="Captura de Proyecto">
-                    </div>
-                    <div class="proyecto-info">
-                        <h3>Pagina Web con tematica de buhos</h3>
-                        <p>Un panel de administración completo desarrollado con PHP y MySQL para gestión de inventarios.
-                        </p>
-                        <div class="proyecto-tags">
-                            <span>HTML</span> <span>CSS</span> <span>JS</span>
-                        </div>
-                        <div class="proyecto-links">
-                            <a href="https://github.com/EXPOSAND/MisBuhos" target="_blank" class="btn-git">
-                                <i class="devicon-github-original"></i> GitHub
-                            </a>
-                            <a href="#" class="btn-demo">Demo</a>
-                        </div>
-                    </div>
+        <div class="col-md-6">
+          <div class="card info-card p-3">
+            <div class="card-body">
+              <div class="d-flex align-items-start justify-content-between gap-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="rounded-3 p-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <!--bi bi es la clase de icono de Bootstrap. bi-mortarboard-fill es el icono de birrete de graduación-->
+                  </div>
+                  <h5 class="mb-0 fw-bold">Educación</h5>
                 </div>
+                <span class="chip">2023 - 2025</span>
+              </div>
 
-                <div class="proyecto-card">
-                    <div class="proyecto-img">
-                        <img src="/img/mqdefault.jpg" alt="Captura de Proyecto">
-                    </div>
-                    <div class="proyecto-info">
-                        <h3>Battleship programada con Java</h3>
-                        <p>Aplicación interactiva que permite jugar al juego clásico de Battleship.</p>
-                        <div class="proyecto-tags">
-                            <span>Java</span> <span>NetBeans</span>
-                        </div>
-                        <div class="proyecto-links">
-                            <a href="https://github.com/EXPOSAND/Battleship-Java" target="_blank" class="btn-git">
-                                <i class="devicon-github-original"></i> GitHub
-                            </a>
-                            <a href="#" class="btn-demo">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto-card">
-                    <div class="proyecto-img">
-                        <img src="/img/EPIS.jpg" alt="Captura de Proyecto">
-                    </div>
-                    <div class="proyecto-info">
-                        <h3>Aplicacion de gestion de EPIS</h3>
-                        <p>Un panel de administración completo desarrollado con PHP y MySQL para gestión de inventarios.
-                        </p>
-                        <div class="proyecto-tags">
-                            <span>HTML</span> <span>CSS</span> <span>JS</span> <span>Bootstrap</span>
-                        </div>
-                        <div class="proyecto-links">
-                            <a href="https://github.com/EXPOSAND/Epi-c" target="_blank" class="btn-git">
-                                <i class="devicon-github-original"></i> GitHub
-                            </a>
-                            <a href="#" class="btn-demo">Demo</a>
-                        </div>
-                    </div>
-                </div>
+              <p class="mt-3 mb-1 fw-semibold">Formación / Grado</p>
+              <p class="text-muted mb-0">
+                Actualmente cursando el grado en Desarrollo Web y Aplicaciones Multiplataforma (DAW) en el centro
+                educativo IES Domenico Scarlatti.
+              </p>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="noticias" class="section-padding bg-alt">
-        <div class="container">
-            <h2>Últimas <span class="highlight">Noticias</span></h2>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <img src="/img/MIT-Massachusetts-Institute-of-Technology-Logo.png" alt="Noticia">
-                    <div class="blog-info">
-                        <span>23 Feb, 2026</span>
-                        <h4>El MIT ha destacado 10 tecnologías clave para 2026, incluyendo centros de datos a hiperescala, micro-reactores nucleares y sistemas para obtener agua del aire.</h4>
-                        <a href="https://www.technologyreview.com/magazines/the-innovation-issue-26/">Leer más</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer id="footer">
-        <p>&copy; 2026 Creado por Andrea Expósito</p>
-        <div class="rrss">
-            <p>Email: andrearmd55@gmail.com</p>
-            <p>Tel: +(34) 604370959</p>
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="skills-wrap">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="section-subtitle">Herramientas y lenguajes en los que me especializo</div>
+      </div>
+
+      <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-filetype-java"></i><span>Java</span>
+          </div>
         </div>
-    </footer>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-filetype-js"></i><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-filetype-html"></i><span>HTML5</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-filetype-css"></i><span>CSS3</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-triangle"></i><span>Vue.js</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-bootstrap"></i><span>Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-cloud"></i><span>AWS</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-filetype-php"></i><span>PHP</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-database"></i><span>MySQL</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-node-plus"></i><span>Node.js</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-git"></i><span>Git</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skill">
+            <i class="bi bi-braces"></i><span>API REST</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Proyectos Principales</h2>
+        <div class="section-subtitle">Selección de mis trabajos más recientes</div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card">
+            <img class="project-thumb"
+              src="imagenes/56493575-abstract-gray-background-neutral-backdrop-design-element.jpg" alt="Proyecto 1">
+            <div class="card-body">
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge badge-soft rounded-pill">Java</span>
+              </div>
+              <h5 class="fw-bold mb-2">Battleship</h5>
+              <p class="text-muted mb-3">Practica basada en el juego de mesa Battleship</p>
+              <div class="d-flex gap-2">
+                <a class="btn btn-sm btn-outline-secondary"
+                  href="https://github.com/EXPOSAND/Practica-Battleship---Java" target="_blank" rel="noreferrer">
+                  <i class="bi bi-github me-1"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card">
+            <img class="project-thumb"
+              src="imagenes/diseno-fondo-gradiente-gris-diseno-vectorial-elegante_374216-272.avif" alt="Proyecto 2">
+            <div class="card-body">
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge badge-soft rounded-pill">Vue</span>
+                <!---badge para etiquetas de tecnologías, rounded-pill para hacerlas redondeadas-->
+                <span class="badge badge-soft rounded-pill">API</span>
+              </div>
+              <h5 class="fw-bold mb-2">Escarlatti - Gest</h5>
+              <p class="text-muted mb-3">App de gestion de reserva de aulas e incidencias.</p>
+              <div class="d-flex gap-2">
+                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/EXPOSAND/escarlatti_gest"
+                  target="_blank" rel="noreferrer">
+                  <i class="bi bi-github me-1"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card">
+            <img class="project-thumb"
+              src="imagenes/56493575-abstract-gray-background-neutral-backdrop-design-element.jpg" alt="Proyecto 3">
+            <div class="card-body">
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge badge-soft rounded-pill">Laravel</span>
+                <span class="badge badge-soft rounded-pill">MySQL</span>
+                <span class="badge badge-soft rounded-pill">PHP</span>
+              </div>
+              <h5 class="fw-bold mb-2">Epi-c</h5>
+              <p class="text-muted mb-3">App de gestion de EPI's</p>
+              <div class="d-flex gap-2">
+                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/EXPOSAND/Epi-c" target="_blank"
+                  rel="noreferrer">
+                  <i class="bi bi-github me-1"></i> Código
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Blog</h2>
+        <div class="section-subtitle">Artículos interesantes sobre la tecnología y el desarrollo web</div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Post 1 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <img class="project-thumb"
+              src="imagenes/56493575-abstract-gray-background-neutral-backdrop-design-element.jpg" alt="Post 1">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge badge-soft rounded-pill">IA</span>
+              </div>
+
+              <h5 class="fw-bold mb-2">Los terapeutas de la IA</h5>
+              <p class="text-muted mb-3">
+                 Muchas personas han encontrado consuelo en chatbots basados en modelos de lenguaje grandes (LLM), y algunos expertos ven en ellos una promesa como terapeutas. 
+              </p>
+
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 26 Feb 2026</small>
+                <a class="btn btn-sm btn-outline-secondary" href="https://technologyreview.es/article/el-ascenso-de-los-terapeutas-de-ia/" target="_blank" rel="noreferrer">
+                  Leer <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <img class="project-thumb"
+              src="imagenes/diseno-fondo-gradiente-gris-diseno-vectorial-elegante_374216-272.avif" alt="Post 2">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge badge-soft rounded-pill">Internet</span>
+              </div>
+
+              <h5 class="fw-bold mb-2">¿Internet estratosferico?</h5>
+              <p class="text-muted mb-3">
+                Tecnología emergente que busca proporcionar conectividad a internet a través de globos aerostáticos
+              </p>
+
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 18 Feb 2026</small>
+                <a class="btn btn-sm btn-outline-secondary" href="https://technologyreview.es/article/el-internet-estratosferico-podria-finalmente-despegar-este-ano/" target="_blank" rel="noreferrer">
+                  Leer <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <img class="project-thumb"
+              src="imagenes/56493575-abstract-gray-background-neutral-backdrop-design-element.jpg" alt="Post 3">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge badge-soft rounded-pill">Tecnología</span>
+                <span class="badge badge-soft rounded-pill">IBM</span>
+              </div>
+
+              <h5 class="fw-bold mb-2">Primer ordenador cuantico en 2028</h5>
+              <p class="text-muted mb-3">
+                IBM ha anunciado planes detallados para construir un ordenador cuántico con corrección de errores con
+                una capacidad de cálculo significativamente mayor que las máquinas existentes, con el objetivo de tenerlo operativo a gran escala para 2028.
+              </p>
+
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 2 Mar 2026</small>
+                <a class="btn btn-sm btn-outline-secondary"
+                  href="https://technologyreview.es/article/la-ruta-de-ibm-para-construir-el-primer-ordenador-cuantico-a-gran-escala-en-2028/"
+                  target="_blank" rel="noreferrer">
+                  Leer <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- Botón opcional -->
+      <div class="text-center mt-4">
+        <a class="btn btn-primary px-4" href="#" target="_blank" rel="noreferrer">
+          Ver todos los posts <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+      <div>© <span>2026</span> Andrea Expósito</div>
+      <div class="small">Hecho con Bootstrap 5</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Bundle para funcionalidades como el navbar responsive -->
 </body>
 
 </html>
